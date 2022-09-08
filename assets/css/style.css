@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* #region Utilities */
 
 .container_fluid{
@@ -23,6 +27,7 @@
 
 .col-7{
     width: calc(100% / 7);
+    padding: 0.4rem 0.2rem;
 }
 
 .bg_gray{
@@ -39,6 +44,10 @@
     padding: 0rem 1rem;
 }
 
+.active{
+    color: var(--active-);
+}
+
 /* #endregion Utilities */
 
 /* #region Main */
@@ -50,9 +59,9 @@ main{
 }
 
 .user{
+    height: 100%;
     color: white;
     position: relative;
-    margin: 0.4rem 0.2rem;
 }
 
 .user img{
@@ -78,7 +87,10 @@ main{
     display: inline-block;
 }
 
-
+.top_menu i:hover{
+    color: #2D8CFF;
+    cursor: pointer;
+}
 
 /* #endregion Main */
 
@@ -98,7 +110,17 @@ footer{
 
 footer i{
     font-size: 1.3rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+footer i:hover{
+    color: #2D8CFF;
+    cursor: pointer;
+}
+
+.active:hover i{
+    color: var(--active-);
+    cursor: pointer;
 }
 
 footer .row{
@@ -119,12 +141,10 @@ footer .row{
 
 .footer_right{
     color: red;
+    font-weight: bold;
     padding: 0rem 1rem;
 }
 
 
 /* #endregion Footer */
 
-.active{
-    color: var(--active-);
-}
