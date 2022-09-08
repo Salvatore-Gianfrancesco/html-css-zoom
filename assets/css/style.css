@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* #region Utilities */
+
 .container_fluid{
     width: 100%;
     margin: auto;
@@ -11,8 +13,39 @@
 
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col-7{
-    width: calc(100% / 12 * 7);
+    width: calc(100% / 7);
 }
+
+/* #endregion Utilities */
+
+/* #region Main */
+
+main{
+    height: 100vh;
+    padding: 3rem;
+    background-color: black;
+}
+
+.user{
+    color: white;
+    position: relative;
+    margin: 0.5rem 0.2rem;
+}
+
+.user img{
+    height: 100%;
+    width: 100%;
+}
+
+.user .name{
+    background-color: #7e7e7e99;
+    position: absolute;
+    bottom: 0;
+}
+
+/* #endregion Main */
+
