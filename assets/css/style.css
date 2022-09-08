@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_fluid{
+    width: 100%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+}
+
+.col-7{
+    width: calc(100% / 12 * 7);
+}
