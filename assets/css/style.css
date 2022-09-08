@@ -1,3 +1,8 @@
+:root{
+    --bg-footer-: #222222;
+    --active-: #48b60a;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +32,11 @@
 
 .br_5{
     border-radius: 5px;
+}
+
+.in_bl{
+    display: inline-block;
+    padding: 0rem 1rem;
 }
 
 /* #endregion Utilities */
@@ -72,3 +82,49 @@ main{
 
 /* #endregion Main */
 
+/* #region Footer */
+
+footer{
+    height: 4rem;
+    margin-top: -3rem;
+    background-color: var(--bg-footer-);
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer i{
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+}
+
+footer .row{
+    height: 4rem;
+    justify-content: space-between;
+}
+
+.footer_left,
+.footer_center,
+.footer_right{
+    display: flex;
+    align-items: center;
+}
+
+.footer_left{
+    padding-left: 1rem;
+}
+
+.footer_right{
+    color: red;
+    padding: 0rem 1rem;
+}
+
+
+/* #endregion Footer */
+
+.active{
+    color: var(--active-);
+}
